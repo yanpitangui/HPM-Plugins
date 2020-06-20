@@ -1,7 +1,6 @@
 Hercules Plugins
 ===========
-
-Hercules Plugins<br/>
+Coleção de plugins para serem usados via HPM para o Hercules Emulator.<br/>
 <br/>
 Initial:<br/>
-* hatless<br/>
+* hatless (hide at will your headgear)<br/>
