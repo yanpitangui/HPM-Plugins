@@ -8,3 +8,4 @@ Initial:<br/>
 Added later:<br/>
 * bonus bLastStand (allow player to survive killing blow at a given chance.)<br/>
 * bonus bCopycat (allow player to auto-cast the last skill used on him back to the caster.<br/>
+* bonus bAtkEmoticon (allow player to automatically use emoticon when attacking, being attacked or both.<br/>
