@@ -1,5 +1,5 @@
 //===== Hercules Plugin ========================================
-//= bCopycat (from Epoque Expansion Pack)
+//= bAtkEmoticon (from Epoque Expansion Pack)
 //===== By: ====================================================
 //= Yan Pitangui
 //===== Current Version: =======================================
