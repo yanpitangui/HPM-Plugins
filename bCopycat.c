@@ -3,7 +3,7 @@
 //===== By: ====================================================
 //= Yan Pitangui
 //===== Current Version: =======================================
-//= 0.1
+//= 0.1a
 //===== Description: ===========================================
 //= bonus bCopycat, n;
 //= n% chance to auto-cast the last skill used on you back to 
@@ -65,6 +65,9 @@ int status_calc_pc_pre(struct map_session_data** sd, enum e_status_calc_opt* opt
 
 
 int additional_effect_post(int retVal___, struct block_list* src, struct block_list* bl, uint16 skill_id, uint16 skill_lv, int attack_type, int dmg_lv, int64 tick) {
+	if (!bl || bl->type != BL_PC) {
+		return 0;
+	}
 	struct map_session_data * dstsd;
 	dstsd = BL_CAST(BL_PC, bl);
 	struct player_data* ssd = getFromMSD(dstsd, 0);
