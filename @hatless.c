@@ -1,4 +1,16 @@
- /// Hatless Hercules Plugin
+//===== Hercules Plugin ======================================
+//= @hatless
+//===== By: ==================================================
+//= Yan Pitangui
+//===== Current Version: =====================================
+//= 0.1.a
+//===== Description: =========================================
+//= Activate this command to, when you equip a head item or
+// costume robe, it will hide it.
+//===== Topic ================================================
+//= https://herc.ws/board/topic/18488-hatless/
+//============================================================
+
 
 #include "common/hercules.h" /* Should always be the first Hercules file included! (if you don't make it first, you won't be able to use interfaces) */
 #include "common/memmgr.h"
@@ -67,14 +79,17 @@ void hatless_pre_clif_changeloook(struct block_list** bl, int *type, int *val) {
 	sd = BL_CAST(BL_PC, *bl);
 	if ((data = getFromMSD(sd, 0))) {
 		switch (*type) {
-		case 3:
+		case LOOK_HEAD_BOTTOM:
 			sd->status.look.head_bottom = *val = 0;
 			break;
-		case 4:
+		case LOOK_HEAD_TOP:
 			sd->status.look.head_top = *val = 0;
 			break;
-		case 5:
+		case LOOK_HEAD_MID:
 			sd->status.look.head_mid = *val = 0;
+			break;
+		case LOOK_ROBE:
+			sd->status.look.robe = *val = 0;
 			break;
 		default:
 			break;
