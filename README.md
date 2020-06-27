@@ -11,3 +11,4 @@ Added later:<br/>
 * bonus bAtkEmoticon (allow player to automatically use emoticon when attacking, being attacked or both)<br/>
 * @mobalive (simplification of mobsearch that only shows if mob is alive or dead)<br/>
 * bonus bAreaSkill (y% chance for skill (skill_id) n to be AoE in y*y cells)<br/>
+* bonus bHealAttack (gives the player the ability to cast healing attacks on enemies regardless of undead element, causing damage)<br/>
