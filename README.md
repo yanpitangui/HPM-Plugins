@@ -12,3 +12,4 @@ Added later:<br/>
 * @mobalive (simplification of mobsearch that only shows if mob is alive or dead)<br/>
 * bonus bAreaSkill (y% chance for skill (skill_id) n to be AoE in y*y cells)<br/>
 * bonus bHealAttack (gives the player the ability to cast healing attacks on enemies regardless of undead element, causing damage)<br/>
+* bonus bSCDamage (Increase damage on enemy inflicted with status effect n by x%.)<br/>
