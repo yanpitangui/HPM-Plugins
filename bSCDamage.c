@@ -46,12 +46,10 @@ int pc_bonus2_pre(struct map_session_data** sd, int* type, int* type2, int* val)
 			CREATE( ssd, struct player_data, 1 );
 			addToMSD(*sd, ssd, 0, true);
 		}
-		ShowInfo("EFFECT: %d, DAMAGE: %d\n", *type2, *val);
 		int i;
 		ARR_FIND(0, MAX_PC_BONUS, i, ssd->status[i].effect == *type2 || ssd->status[i].damage == 0);
 		ssd->status[i].effect = *type2;
 		ssd->status[i].damage += *val;
-		ShowInfo("APPLIED: EFFECT-> %d, DAMAGE-> %d\n", ssd->status[i].effect, ssd->status[i].damage);
 		hookStop();
 	}
 	return 0;
@@ -73,7 +71,6 @@ int64 battle_calc_damage_pre(struct block_list** src, struct block_list** bl, st
 			int i;
 			for (i = 0; i < ARRAYLENGTH(ssd->status); i++) {
 				if (ssd->status[i].damage && SC_MAX > ssd->status[i].effect && sc->data[ssd->status[i].effect]) {
-					ShowInfo("ENTREI AQUI: DAMAGE %d", ssd->status[i].damage);
 					*damage += (*damage * ssd->status[i].damage / 100);
 				}
 			}
