@@ -13,3 +13,4 @@ Added later:<br/>
 * bonus bAreaSkill (y% chance for skill (skill_id) n to be AoE in y*y cells)<br/>
 * bonus bHealAttack (gives the player the ability to cast healing attacks on enemies regardless of undead element, causing damage)<br/>
 * bonus bSCDamage (Increase damage on enemy inflicted with status effect n by x%.)<br/>
+* bonus bSCExchange (This bonus gives the player a chance to instead of being inflicted by a status (SC_BLIND, SC_FREEZE, etc) to a new one.)<br/>
