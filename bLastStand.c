@@ -3,7 +3,7 @@
 //===== By: ==================================================
 //= Yan Pitangui
 //===== Current Version: =====================================
-//= 0.1
+//= 0.1a
 //===== Description: =========================================
 //= bonus bLastStand, n;
 //= N% chance to survive a killing blow.
@@ -45,7 +45,7 @@ int pc_bonus_pre(struct map_session_data** sd, int *type, int *val) {
 			addToMSD(*sd, ssd, 0, true);
 		}
 		else {
-			ssd->last_stand_chance += cap_value(*val + ssd->last_stand_chance, 0, 100);
+			ssd->last_stand_chance = cap_value(*val + ssd->last_stand_chance, 0, 100);
 		}
 		hookStop();
 	}

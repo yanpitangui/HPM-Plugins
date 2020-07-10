@@ -3,7 +3,7 @@
 //===== By: ====================================================
 //= Yan Pitangui
 //===== Current Version: =======================================
-//= 0.1a
+//= 0.1b
 //===== Description: ===========================================
 //= bonus bCopycat, n;
 //= n% chance to auto-cast the last skill used on you back to 
@@ -49,7 +49,7 @@ int pc_bonus_pre(struct map_session_data** sd, int *type, int *val) {
 			addToMSD(*sd, ssd, 0, true);
 		}
 		else {
-			ssd->copy_cat_chance += cap_value(*val + ssd->copy_cat_chance, 0, 100);
+			ssd->copy_cat_chance = cap_value(*val + ssd->copy_cat_chance, 0, 100);
 		}
 		hookStop();
 	}
