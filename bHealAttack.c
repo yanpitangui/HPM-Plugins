@@ -10,8 +10,6 @@
 //= element/race
 //= Example:
 //= 	bonus bHealAttack,1;
-//===== Topic ================================================
-//= https://herc.ws/board/topic/18511-bhealattack/
 //============================================================
 
 #include "common/hercules.h"

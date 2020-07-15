@@ -7,8 +7,6 @@
 //===== Description: =========================================
 //= Activate this command to, when you equip a head item or
 // costume robe, it will hide it.
-//===== Topic ================================================
-//= https://herc.ws/board/topic/18488-hatless/
 //============================================================
 
 
@@ -56,14 +54,14 @@ int toggle_hatless(int fd, struct map_session_data *sd) {
 		addToMSD(sd, data, 0, false);
 		data->i;
 		char output[99];
-		safesnprintf(output, 99, "Hatless está ligado, equipe seus itens para que eles nao apareçam.");
+		safesnprintf(output, 99, "Hatless estï¿½ ligado, equipe seus itens para que eles nao apareï¿½am.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 1;
 	}
 	else {
 		removeFromMSD(sd, 0);
 		char output[99];
-		safesnprintf(output, 99, "Hatless está desligado, equipe seus itens para que eles apareçam.");
+		safesnprintf(output, 99, "Hatless estï¿½ desligado, equipe seus itens para que eles apareï¿½am.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 0;
 	}

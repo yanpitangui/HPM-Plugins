@@ -11,8 +11,6 @@
 //
 //= Example:
 //= bonus3 bSCExchange,SC_FREEZE,SC_TRUESIGHT,100;
-//===== Topic ==================================================
-//= https://herc.ws/board/topic/18527-bscexchange/
 //==============================================================
 
 #include "common/hercules.h"

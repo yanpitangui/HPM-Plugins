@@ -9,8 +9,6 @@
 //= Increase damage on enemy inflicted with status n by x%.
 //= Example:
 //= 	bonus bSCDamage, SC_FREEZE, 10;
-//===== Topic ================================================
-//= https://herc.ws/board/topic/18516-bscdamage/
 //============================================================
 
 #include "common/hercules.h"

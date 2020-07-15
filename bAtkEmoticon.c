@@ -13,8 +13,6 @@
 //= Max of 5 emoticons
 //= Example:
 //= 	bonus3 bAtkEmoticon,100,2,1;
-//===== Topic ==================================================
-//= https://herc.ws/board/topic/18500-batkemoticon/
 //==============================================================
 
 #include "common/hercules.h"

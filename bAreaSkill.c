@@ -9,8 +9,6 @@
 //= y% chance for skill (skill_id) n to be AoE in y*y cells 
 //= Example:
 //= 	bonus3 bAreaSkill,271,100,7;
-//===== Topic ==================================================
-//= https://herc.ws/board/topic/18506-bareaskill/
 //==============================================================
 
 #include "common/hercules.h"

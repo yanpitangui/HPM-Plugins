@@ -13,8 +13,6 @@
 // skills should work.
 //= Example:
 //= 	bonus bCopycat,10;
-//===== Topic ==================================================
-//= https://herc.ws/board/topic/18499-bcopycat/
 //==============================================================
 
 #include "common/hercules.h"

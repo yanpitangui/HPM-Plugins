@@ -7,8 +7,6 @@
 //===== Description: =========================================
 //= Simplification of mobsearch, to make it more fair, it
 //= does not show de mob location.
-//===== Topic ================================================
-//= https://herc.ws/board/topic/18501-mobalive/
 //============================================================
 
 
@@ -52,7 +50,7 @@ ACMD(mobalive) {
 	if ((mob_id = atoi(mob_name)) == 0)
 		mob_id = mob->db_searchname(mob_name);
 	if (mob_id > 0 && mob->db_checkid(mob_id) == 0) {
-		safesnprintf(output, 99, "Mob %d não encontrado.", mob_id);
+		safesnprintf(output, 99, "Mob %d nï¿½o encontrado.", mob_id);
 		clif->message(fd, output);
 		return false;
 	}
