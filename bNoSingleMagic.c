@@ -6,7 +6,7 @@
 //= 0.1
 //===== Description: =========================================
 //= bonus bNoSingleMagic, n;
-//= N% chance to survive a killing blow.
+//= Reduce single target magic damage in n%.
 //= Example:
 //= 	bonus bNoSingleMagic,10;
 //============================================================
