@@ -3,7 +3,7 @@
 //===== By: ==================================================
 //= Yan Pitangui
 //===== Current Version: =====================================
-//= 0.1.a
+//= 0.1.b
 //===== Description: =========================================
 //= Activate this command to, when you equip a head item or
 // costume robe, it will hide it.
@@ -30,7 +30,7 @@
 HPExport struct hplugin_info pinfo = {
 	"Hatless",    // Plugin name
 	SERVER_TYPE_MAP,// Which server types this plugin works with?
-	"0.1",       // Plugin version
+	"0.1b",       // Plugin version
 	HPM_VERSION, // HPM Version (don't change, macro is automatically updated)
 };
 
@@ -48,20 +48,19 @@ int toggle_hatless(int fd, struct map_session_data *sd) {
 	struct hatless* data;
 	if (!sd) return 0;
 
-	/* socket didn't fully log-in? this packet shouldn't do anything then! */
 	if (!(data = getFromMSD(sd, 0))) {
 		CREATE(data, struct hatless, 1);
 		addToMSD(sd, data, 0, false);
 		data->i;
 		char output[99];
-		safesnprintf(output, 99, "Hatless est� ligado, equipe seus itens para que eles nao apare�am.");
+		safesnprintf(output, 99, "Hatless is on, equip your items for them to appear.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 1;
 	}
 	else {
 		removeFromMSD(sd, 0);
 		char output[99];
-		safesnprintf(output, 99, "Hatless est� desligado, equipe seus itens para que eles apare�am.");
+		safesnprintf(output, 99, "Hatless is off, equip your items so they don't appear.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 0;
 	}
