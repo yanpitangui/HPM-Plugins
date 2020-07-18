@@ -53,14 +53,14 @@ int toggle_hatless(int fd, struct map_session_data *sd) {
 		addToMSD(sd, data, 0, false);
 		data->i;
 		char output[99];
-		safesnprintf(output, 99, "Hatless is on, equip your items for them to appear.");
+		safesnprintf(output, 99, "Hatless is on, equip your items so they don't appear.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 1;
 	}
 	else {
 		removeFromMSD(sd, 0);
 		char output[99];
-		safesnprintf(output, 99, "Hatless is off, equip your items so they don't appear.");
+		safesnprintf(output, 99, "Hatless is off, equip your items for them to appear.");
 		clif->messagecolor_self(fd, COLOR_GREEN, output);
 		return 0;
 	}
