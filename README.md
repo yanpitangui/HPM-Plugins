@@ -20,3 +20,4 @@ Added later:<br/>
 * bonus bAvoidTrap (N% chance to avoid activating a trap when stepping on it.)<br/>
 * bonus bNoAreaMagic (Reduce area target magic damage in n%.)<br/>
 * bonus bNoSingleMagic (Reduce single target magic damage in n%.)<br/>
+* bonus bElementDamage (Increase player damage of element n by x%.)<br/>
